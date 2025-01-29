@@ -7,36 +7,63 @@
 body {
     width: 100%;
 }
-.container{
+
+.container {
     height: 100vh;
 }
+
 /****************************** HEADER *******************/
-#header{
+#header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: 9vh;
     background-color: #fadbd8;
+    position: sticky;
     /* box-shadow: 2px 5px 15px rgba(15, 15, 15, 0.06); */
 }
-#header h3{
-    padding: 10px 0 0 30px;
+
+#header h3 {
+    padding: 12px 0 0 30px;
 }
-nav ul{
+
+nav ul {
     list-style: none;
     display: flex;
     flex-direction: row;
+    position: relative;
 }
+
 nav ul li {
-    padding: 12px;
+    padding: 13px 18px;
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
     color: black;
+    font-weight: 540;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #51807A;
+    transition: 0.5s ease;
+}
+
+/* Additional content (under line) */
+nav ul li a.active::after,
+nav ul li a:hover::after {
+    content: " ";
+    width: 40px;
+    height: 1px;
+    background-color: #51807A;
+    position: absolute;
+    bottom: -1px;
+    left: 20px;
 }
 
 /********************* Welcome section ********************/
-#welcome{
+#welcome {
     /* margin: 20px; */
     background-image: url(/images/background4.jpg);
     background-size: cover;
@@ -48,13 +75,15 @@ nav ul li a{
     flex-direction: column;
 
 }
-.intro{
+
+.intro {
     margin: 20px;
     position: relative;
     z-index: 2;
     padding: 150px 0 0 350px;
 }
-.intro p{
+
+.intro p {
     /* background-color: rebeccapurple; */
     width: 600px;
     height: 200px;
@@ -63,23 +92,56 @@ nav ul li a{
     font-size: 25px;
     font-weight: 550;
 }
-.intro button{
+
+.intro button {
     align-items: center;
     margin-left: 240px;
+    width: 100px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 8px;
+    font-weight: 550;
 }
-.progress{
+
+.intro button:hover {
+    background-color: #fadbd8;
+    color: #51807A;
+    /* background: #DBE6F6;
+    background: -webkit-linear-gradient(to right, #C5796D, #DBE6F6);
+    background: linear-gradient(to right, #C5796D, #DBE6F6); */
+    border: none;
+
+}
+
+.progress {
     position: relative;
     z-index: 2;
     display: flex;
     flex-direction: row;
-    width: 500px;
-    background-color: yellowgreen;
-    height: 50px;
-    padding: 10px;
+    width: 800px;
+    /* background-color: yellowgreen; */
+    height: 120px;
+    padding: 30px;
+    margin-left: 280px;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
 }
-.progress i {
-    width: 80px;
-    height: 50px;
+
+.html,
+.css,
+.js {
+    /* background-color: aqua; */
+    width: 100px;
+    height: 100px;
+    margin: 0 50px;
+    justify-items: center;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.html i,
+.css i,
+.js i {
+    font-size: 30px;
+    /* color: white; */
 }
