@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: #fadbd8;
+}
+
+/************ Back arrow ************/
+.back {
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.back i {
+    font-size: 21px;
+    color: black;
+}
+
+.back a {
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 5px;
+    font-weight: 550;
+    color: black;
+}
+
+.back i:hover {
+    color: #51807A;
+}
+
+/********** form *******/
+#contactform {
+    margin: 30px auto;
+    /* Centers the form */
+    width: 350px;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #ffffff;
+    /* justify-content: center; */
+    align-items: center;
+    position: relative;
+}
+
+#contactform img {
+    position: absolute;
+    z-index: 2;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#contactform h3 {
+    margin: 10px 0;
+    padding-top: 60px;
+    text-decoration: underline;
+}
+
+#contactform label {
+    justify-content: left;
+    padding-top: 20px;
+}
+#contactform input{
+    width: 220px;
+    height: 25px;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid black;    
+}
+#contactform textarea{
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 7px;
+    border: 1px solid black;    
+
+}
+
+button {
+    /* align-items: center; */
+    margin-top: 20px;
+    width: 100px;
+    height: 40px;
+    /* padding: 5px; */
+    border-radius: 8px;
+    font-weight: 550;
+}
+
+button:hover {
+    background-color: #fadbd8;
+    color: #51807A;
+    border: none;
+}
