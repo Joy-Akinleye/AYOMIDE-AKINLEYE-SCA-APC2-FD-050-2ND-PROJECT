@@ -67,7 +67,7 @@ nav ul li a.active {
 .back i:hover{
     color: #51807A;
 }
-
+/*********** CONTAINER ***********/
 .quote-display{
     text-decoration: none;
 }
@@ -85,6 +85,7 @@ nav ul li a.active {
 #motivation:hover{
 color: #74dacd;
 }
+
 .journey h3{
     text-align: center;
     font-size: 23px;
@@ -103,13 +104,11 @@ color: #74dacd;
     width: 300px;
     height: 300px;
     border-radius: 200px;
-    /* margin: 0 auto; */
-    /* margin-left: 100px; */
+    margin-left: 100px;
 }
 .text{
     height: 50vh;
     padding: 0 30px 30px 0;
     font-size: 19px;
     margin: auto;
-    /* text-align: center; */
 }
